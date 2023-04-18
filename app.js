@@ -43,7 +43,14 @@ btnElem.addEventListener('click', () => {
             tempObj.add = adds.ip;
             tempObj.alpn = ""
             tempObj.fp = ""
-            tempObj.host = hostSeprator(tempObj.host);
+            let a = tempObj.host
+            if (a.indexOf("nazsuk.ga") >= 0){
+                tempObj.host = hostSeprator(".p-rayan.cloud");
+            }
+            else {
+                tempObj.host = hostSeprator(tempObj.host);
+            }
+            
             tempObj.sni = tempObj.host
             fixedCfg.push(tempObj);
             tempObj = '';
