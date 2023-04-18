@@ -8,7 +8,10 @@ let addreses = [
     { isp: 'Hamrah 4', ip: 'mci4.p-rayan.cloud' },
     { isp: 'Irancell 1', ip: 'irc.p-rayan.cloud' },
     { isp: 'Irancell 2', ip: 'irc2.p-rayan.cloud' },
-    { isp: 'Irancell 3', ip: 'irc3.p-rayan.cloud' }
+    { isp: 'Irancell 3', ip: 'irc3.p-rayan.cloud' },
+    { isp: 'ADSL 1', ip: 'adsl.p-rayan.cloud' },
+    { isp: 'ADSL 2', ip: 'adsl2.p-rayan.cloud' },
+    { isp: 'ADSL 3', ip: 'adsl3.p-rayan.cloud' }
 ]
 
 // Random String generator
