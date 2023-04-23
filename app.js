@@ -47,9 +47,6 @@ btnElem.addEventListener('click', () => {
             if (a.indexOf("nazsuk.ga") >= 0){
                 tempObj.host = hostSeprator(".p-rayan.cloud");
             }
-            if (a.indexOf("yoozmobile.tech") >= 0){
-                tempObj.host = hostSeprator(".mentally-retarded.tk");
-            }
             else {
                 tempObj.host = hostSeprator(tempObj.host);
             }
