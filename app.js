@@ -2,16 +2,12 @@ const inputElem = document.querySelector('#input');
 const btnElem = document.querySelector('#getCfg');
 
 let addreses = [
-    { isp: 'Hamrah 1', ip: 'mci.p-rayan.cloud' },
-    { isp: 'Hamrah 2', ip: 'mci2.p-rayan.cloud' },
-    { isp: 'Hamrah 3', ip: 'mci3.p-rayan.cloud' },
-    { isp: 'Hamrah 4', ip: 'mci4.p-rayan.cloud' },
-    { isp: 'Irancell 1', ip: 'irc.p-rayan.cloud' },
-    { isp: 'Irancell 2', ip: 'irc2.p-rayan.cloud' },
-    { isp: 'Irancell 3', ip: 'irc3.p-rayan.cloud' },
-    { isp: 'ADSL 1', ip: 'adsl.p-rayan.cloud' },
-    { isp: 'ADSL 2', ip: 'adsl2.p-rayan.cloud' },
-    { isp: 'ADSL 3', ip: 'adsl3.p-rayan.cloud' }
+    { isp: 'Hamrah 1', ip: 'dl1.hostpro.tech' },
+    { isp: 'Hamrah 2', ip: 'dl2.hostpro.tech' },
+    { isp: 'Hamrah 3', ip: 'dl3.hostpro.tech' },
+    { isp: 'Irancell 1', ip: 'cdn1.hostpro.tech' },
+    { isp: 'Irancell 2', ip: 'cdn2.hostpro.tech' },
+    { isp: 'Irancell 3', ip: 'cdn3.hostpro.tech' }
 ]
 
 // Random String generator
@@ -44,8 +40,8 @@ btnElem.addEventListener('click', () => {
             tempObj.alpn = ""
             tempObj.fp = ""
             let a = tempObj.host
-            if (a.indexOf("nazsuk.ga") >= 0){
-                tempObj.host = hostSeprator(".p-rayan.cloud");
+            if (a.indexOf("p-rayan.cloud") >= 0){
+                tempObj.host = hostSeprator(".hostpro.tech");
             }
             if (a.indexOf("yoozmobile.tech") >= 0){
                 tempObj.host = hostSeprator(".mentally-retarded.tk");
