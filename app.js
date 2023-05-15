@@ -42,9 +42,15 @@ btnElem.addEventListener('click', () => {
             let a = tempObj.host
             if (a.indexOf("p-rayan.cloud") >= 0){
                 tempObj.host = hostSeprator(".hostpro.tech");
+                tempObj.sni = hostSeprator(".hostpro.tech");
             }
-            if (a.indexOf("yoozmobile.tech") >= 0){
-                tempObj.host = hostSeprator(".mentally-retarded.tk");
+            if (a.indexOf("nazsuk.ga") >= 0){
+                tempObj.host = hostSeprator(".hostpro.tech");
+                tempObj.sni = hostSeprator(".hostpro.tech");
+            }
+            if (a.indexOf("mentally-retarded.tk") >= 0){
+                tempObj.host = hostSeprator(".yoozmobile.tech");
+                tempObj.sni = hostSeprator(".yoozmobile.tech");
             }
             else {
                 tempObj.host = hostSeprator(tempObj.host);
