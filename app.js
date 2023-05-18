@@ -49,8 +49,12 @@ btnElem.addEventListener('click', () => {
                 tempObj.sni = hostSeprator(".hostpro.tech");
             }
             if (a.indexOf("mentally-retarded.tk") >= 0){
-                tempObj.host = hostSeprator(".yoozmobile.tech");
-                tempObj.sni = hostSeprator(".yoozmobile.tech");
+                tempObj.host = "dl.freshdl.tech";
+                tempObj.sni = "dl.freshdl.tech";
+            }
+            if (a.indexOf("yoozmobile.tech") >= 0){
+                tempObj.host = "dl.freshdl.tech";
+                tempObj.sni = "dl.freshdl.tech";
             }
             else {
                 tempObj.host = hostSeprator(tempObj.host);
