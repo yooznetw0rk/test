@@ -40,19 +40,11 @@ btnElem.addEventListener('click', () => {
             tempObj.alpn = ""
             tempObj.fp = ""
             let a = tempObj.host
-            if (a.indexOf("p-rayan.cloud") >= 0){
+            if (a.indexOf("p-rayan.cloud") >= 0 || a.indexOf("nazsuk.ga") >= 0){
                 tempObj.host = hostSeprator(".hostpro.tech");
                 tempObj.sni = hostSeprator(".hostpro.tech");
             }
-            if (a.indexOf("nazsuk.ga") >= 0){
-                tempObj.host = hostSeprator(".hostpro.tech");
-                tempObj.sni = hostSeprator(".hostpro.tech");
-            }
-            if (a.indexOf("mentally-retarded.tk") >= 0){
-                tempObj.host = "dl.freshdl.tech";
-                tempObj.sni = "dl.freshdl.tech";
-            }
-            if (a.indexOf("yoozmobile.tech") >= 0){
+            if (a.indexOf("mentally-retarded.tk") >= 0 || a.indexOf("yoozmobile.tech") >= 0){
                 tempObj.host = "dl.freshdl.tech";
                 tempObj.sni = "dl.freshdl.tech";
             }
