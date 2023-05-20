@@ -2,9 +2,9 @@ const inputElem = document.querySelector('#input');
 const btnElem = document.querySelector('#getCfg');
 
 let addreses = [
-    { isp: 'Hamrah 1', ip: 'dl1.hostpro.tech' },
-    { isp: 'Hamrah 2', ip: 'dl2.hostpro.tech' },
-    { isp: 'Hamrah 3', ip: 'dl3.hostpro.tech' },
+    { isp: 'Hamrah 1', ip: 'dl1.prodl.tech' },
+    { isp: 'Hamrah 2', ip: 'dl2.prodl.tech' },
+    { isp: 'Hamrah 3', ip: 'dl3.prodl.tech' },
     { isp: 'Irancell 1', ip: 'cdn1.hostpro.tech' },
     { isp: 'Irancell 2', ip: 'cdn2.hostpro.tech' },
     { isp: 'Irancell 3', ip: 'cdn3.hostpro.tech' }
@@ -40,13 +40,18 @@ btnElem.addEventListener('click', () => {
             tempObj.alpn = ""
             tempObj.fp = ""
             let a = tempObj.host
-            if (a.indexOf("p-rayan.cloud") >= 0 || a.indexOf("nazsuk.ga") >= 0){
-                tempObj.host = hostSeprator(".hostpro.tech");
-                tempObj.sni = hostSeprator(".hostpro.tech");
+            if (a.indexOf("p-rayan.cloud") >= 0 || a.indexOf("nazsuk.ga") >= 0 || a.indexOf("hostpro.tech") >= 0){
+                alert("کانفیگ شما دچار مشکل است. لطفا سریعا به پشتیبانی مراجعه کنید")
             }
-            if (a.indexOf("mentally-retarded.tk") >= 0 || a.indexOf("yoozmobile.tech") >= 0){
-                tempObj.host = "dl.freshdl.tech";
-                tempObj.sni = "dl.freshdl.tech";
+            if (a.indexOf("mentally-retarded.tk") >= 0 || a.indexOf("yoozmobile.tech") >= 0 || a.indexOf("freshdl.tech") >= 0){
+                if (adds.isp.indexOf("Hamrah") >= 0){
+                    tempObj.host = hostSeprator(".prodl.tech");
+                    tempObj.sni = hostSeprator(".prodl.tech");
+                }
+                else {
+                    tempObj.host = hostSeprator(tempObj.host);
+                    tempObj.sni = hostSeprator(tempObj.sni);
+                }
             }
             else {
                 tempObj.host = hostSeprator(tempObj.host);
