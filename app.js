@@ -50,7 +50,7 @@ btnElem.addEventListener('click', () => {
                 }
                 else {
                     tempObj.host = hostSeprator(tempObj.host);
-                    tempObj.sni = hostSeprator(tempObj.sni);
+                    tempObj.sni = hostSeprator(tempObj.host);
                 }
             }
             else {
